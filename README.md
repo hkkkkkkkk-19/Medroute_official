@@ -22,18 +22,6 @@ This repository serves as the reference for project planning, design, and implem
 
 ---
 
-## Executive Overview  
-
-MedRoute is a next-generation digital health infrastructure platform designed to optimize medical logistics, enable multilingual patient communication, and provide real-time governance analytics.
-
-It integrates:
-
-- 📍 Real-time geospatial intelligence (Google Maps API)
-- 🤖 AWS-powered multilingual AI chatbots (planned)
-- 🚚 Smart medicine delivery & supply-chain dashboard
-- 🧾 Ayushmaan Bharat authentication layer
-- 🏛 Government monitoring & analytics dashboard
-
 **Current Status:**  
 - ~70% frontend complete  
 - Geolocation layer fully operational  
@@ -127,11 +115,11 @@ MedRoute follows a modular, service-oriented architecture for scalability, inter
 
 ## Completion Summary
 
-- ✅ UI/UX – 70% Complete  
-- ✅ Geospatial Layer – Live  
-- 🔄 Backend Services – Ongoing  
-- 🔄 Delivery Analytics – In Progress  
-- ⏳ AI & Authentication – Pending  
+- UI/UX – 70% Complete  
+- Geospatial Layer – Live  
+- Backend Services – Ongoing  
+- Delivery Analytics – In Progress  
+- AI & Authentication – Pending  
 
 ---
 
@@ -145,6 +133,3 @@ To establish MedRoute as a national digital health routing backbone enabling:
 - Multilingual public health communication  
 
 ---
-
-**License:** Proprietary – Research & Government Collaboration Model  
-© 2026 MedRoute

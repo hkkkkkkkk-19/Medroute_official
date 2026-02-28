@@ -127,3 +127,31 @@ To establish MedRoute as a national digital health routing backbone enabling:
 - Multilingual public health communication  
 
 ---
+
+# You can see and run locally to see live updates.
+
+## Prerequisites
+
+- [Node.js](https://nodejs.org/) installed
+- [npm](https://www.npmjs.com/) installed
+
+Check versions:
+
+```bash
+node -v
+npm -v
+```
+
+## Setup & Run
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Run the development server (live reload with nodemon):
+
+```bash
+npm run dev
+```

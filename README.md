@@ -16,13 +16,7 @@ MedRoute is a platform designed to optimize the redistribution of unused medicin
 ## Usage
 This repository serves as the reference for project planning, design, and implementation. It provides a complete overview of the system’s specifications and proposed architecture.
 
-# MedRoute  
-
-**An Intelligent, Multilingual, Government-Integrated Healthcare Logistics & Communication Platform**
-
----
-
-**Current Status:**  
+##  Current Status:
 - ~70% frontend complete  
 - Geolocation layer fully operational  
 - Backend, AI integration, and authentication modules in progress  

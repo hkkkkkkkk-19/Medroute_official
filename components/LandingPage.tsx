@@ -2,6 +2,7 @@ import React from 'react';
 import LiveMap from './LiveMap.tsx';
 import AnimatedCounter from './AnimatedCounter.tsx';
 import NearbyHubSearch from './NearbyHubSearch.tsx';
+import MedRouteChatbot from './MedRouteChatbot.tsx';
 
 interface Props {
   onAuth: () => void;
@@ -10,9 +11,10 @@ interface Props {
   onRequest: () => void;
   onNGO: () => void;
   onGov: () => void;
+  onDelivery: () => void;
 }
 
-const LandingPage: React.FC<Props> = ({ onAuth, onStart, onDonate, onRequest, onNGO, onGov }) => {
+const LandingPage: React.FC<Props> = ({ onAuth, onStart, onDonate, onRequest, onNGO, onGov, onDelivery }) => {
   const stats = [
     { 
       label: "Medicines Saved (units)", 
@@ -240,6 +242,13 @@ const LandingPage: React.FC<Props> = ({ onAuth, onStart, onDonate, onRequest, on
           </div>
         </div>
       </section>
+      <MedRouteChatbot
+        onDonate={onDonate}
+        onRequest={onRequest}
+        onNGO={onNGO}
+        onGov={onGov}
+        onDelivery={onDelivery}
+      />
     </div>
   );
 };

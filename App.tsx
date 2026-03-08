@@ -12,6 +12,7 @@ import NGOLandingPage from './components/NGOLandingPage.tsx';
 import GovLandingPage from './components/GovLandingPage.tsx';
 import Navbar from './components/Navbar.tsx';
 import LiveNotifications from './components/LiveNotifications.tsx';
+import DeliveryDashboard from './components/DeliveryDashboard.tsx';
 
 interface AuthContextType {
   user: User | null;
@@ -113,6 +114,7 @@ const App: React.FC = () => {
           case UserRole.RECEIVER: return <ReceiverDashboard />;
           case UserRole.NGO: return <NGODashboard />;
           case UserRole.GOVERNMENT: return <GovDashboard />;
+          case UserRole.DELIVERY: return <DeliveryDashboard />;
           default: return <DonorDashboard />;
         }
       }
@@ -129,6 +131,10 @@ const App: React.FC = () => {
       onRequest={() => setView('RECEIVER_LANDING')}
       onNGO={() => setView('NGO_LANDING')}
       onGov={() => setView('GOV_LANDING')}
+      onDelivery={() => {
+        setAuthConfig({ role: UserRole.DELIVERY, isLogin: false });
+        setView('AUTH');
+      }}
     />;
   };
 
